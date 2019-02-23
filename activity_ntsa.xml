@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="prototype.com.irpsv.Contact"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emmergency Contacts"
+
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_weight="0.00"
+        android:textColor="#ff50ff"
+        />
+    <Button
+        android:layout_width="351dp"
+        android:layout_height="89dp"
+        android:text="Contact Traffic police"
+        android:id="@+id/button6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:layout_weight="0.18"
+        android:onClick="traffic" />
+
+    <Button
+        android:layout_width="351dp"
+        android:layout_height="89dp"
+        android:text="Contact NTSA"
+        android:id="@+id/button7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:onClick="ntsa" />
+    <Button
+        android:layout_width="351dp"
+        android:layout_height="89dp"
+        android:text="Emergency Ambulance"
+        android:id="@+id/button8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:onClick="ambulance" />
+
+</LinearLayout>
