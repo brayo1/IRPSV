@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="prototype.com.irpsv.Accident2"
+
+    android:fillViewport="false">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Report An Accident"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_weight="0.08"
+        android:textColor="#ff50ff"
+        android:id="@+id/report_txt"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="351dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:hint="@string/mat_name"
+
+        android:id="@+id/matatu_sacco" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/plate_number"
+        android:hint="@string/plate"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/place_of_accident"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/poa"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/time_of_accident"
+        android:layout_gravity="center_horizontal"
+        android:inputType="datetime"
+        android:hint="@string/toa"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Description of accident:"
+        android:gravity="bottom"
+        android:textColor="#ff00ff"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Brief Description of Accident"
+        android:gravity="top"
+        android:id="@+id/description" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:textColor="#ff00ff"
+        android:text="Please Enter Your Personal Details"
+
+        android:layout_weight="0.08" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/name"
+        android:inputType="text|datetime"
+        android:hint="@string/name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/phone_no"
+        android:inputType="datetime"
+        android:hint="@string/phone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:textColor="#ff00ff"
+        android:text="@string/awd"
+
+        android:layout_weight="0.08" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/witness_name"
+        android:inputType="text"
+        android:hint="@string/name_witness" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:id="@+id/phone_witness"
+        android:inputType="number"
+        android:hint="@string/phone_witness" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/ape"
+        android:id="@+id/takepicture" />
+
+    <ImageView android:id="@+id/imageView1"
+        android:layout_height="157dp"
+        android:src="@drawable/icon"
+        android:layout_width="157dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Accident Report"
+        android:id="@+id/send_accident_report"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+</ScrollView>
